@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package packageOfCorgis;
+
+service RpcCorgi {
+  rpc SayWoof (CorgiRequest) returns (WoofReply) {}
+}
+
+message CorgiRequest {
+  string corgindex = 1;
+}
+
+message WoofReply {
+  string message = 1;
+}
